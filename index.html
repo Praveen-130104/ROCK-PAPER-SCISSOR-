@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><img src="./assets/logo.png" alt=""></li>
+                <li>
+                    <ul>
+                        <li><a href="#startpg" id="home">HOME</a></li>
+                        <div id="rules">
+                            <p>1. Click on the title to start the game<br>
+                                2. If you lose thrice , game will be over<br>
+                                3. Know that Rock takes  Scissor<br>
+                                4. Know that Paper takes  Rock<br>
+                                5. Know that Scissor takes  paper</p>
+                        </div>
+                        <li><a href="#" id="features">RULES</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="startpg">
+            <div class="text-typing">
+                <p id="R"><a href="#hplay">ROCK</a></p>
+                <p id="P" ><a href="#hplay">PAPER</a></p>
+                <p id="S"><a href="#hplay">SCISSORS</a></p>
+            </div>
+        </div>
+        <div class="sub">
+            <div>
+                <p id="hplay">LETS PLAY!!</p>
+            </div>
+            <div class="play">
+                <div class="user">User<br>
+                    <img id="brock" src="./assets/rock.png" alt="">
+                    <img id="bpaper" src="./assets/paper.png" alt="">
+                    <img id="bsci" src="./assets/scissors.png" alt="">
+                </div>
+                <div class="computer">Computer<br>
+                    <img id="crock" src="./assets/rock.png" alt="">
+                    <img id="cpaper" src="./assets/paper.png" alt="">
+                    <img id="csci" src="./assets/scissors.png" alt="">
+                </div>
+            </div>
+            <div class="options">
+                <ul>
+                    <li style="color: beige;">OPTIONS:</li>
+                    <li>
+                        <ul>
+                            <li><button id="x" ><img id="rocko" src="./assets/rock.png" alt=""></button></li>
+                            <li><button id="y" ><img id="papero" src="./assets/paper.png" alt=""></button></li>
+                            <li><button id="z"><img id="scio" src="./assets/scissors.png" alt=""></button></li>
+                        </ul>
+                    </li>
+                    
+                </ul> 
+            </div>
+            <div class="score"> Your Score: <span id="numberx">0</span></div>
+            <div class="scorec">Computer Score: <span id="numbery">0</span></div>
+            <div id="gameover">
+                <div>
+                    <h2>GAME OVER</h2>
+                    <button id="bt" onClick="document.location.reload(true)">REPLAY</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
